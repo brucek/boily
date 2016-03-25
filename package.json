@@ -3,7 +3,6 @@
   "description": "Boilerplate for creating libraries with rollup",
   "version": "1.8.1",
   "license": "MIT",
-
   "author": {
     "name": "KFlash",
     "email": "kflash123@gmail.com"
@@ -52,7 +51,7 @@
     "isparta": "^4.0.0",
     "isparta-loader": "^2.0.0",
     "chai": "^3.5.0",
-    "eslint": "^2.4.0",
+    "eslint": "^2.5.1",
     "webpack": "^2.1.0-beta.4",
     "webpack-dev-server": "^1.14.1",
     "glob": "^7.0.3",
