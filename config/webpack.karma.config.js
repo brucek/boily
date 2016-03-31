@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const glob = require('glob');
 const path = require('path');
 
 module.exports = {
@@ -15,7 +14,7 @@ module.exports = {
 			include: path.resolve('src/'),
 			loader: 'isparta',
 			query: {
-				cacheDirectory: true,
+				cacheDirectory: true
 			}
 		}],
 		loaders: [
@@ -26,6 +25,9 @@ module.exports = {
 				loader: 'babel-loader',
 				query: {
 					cacheDirectory: true,
+          plugins: [
+            'babel-plugin-rewire'
+          ]
 				}
 			},
 			// This allows the test setup scripts to load `package.json`

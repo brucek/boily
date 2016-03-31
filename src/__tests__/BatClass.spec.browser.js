@@ -35,7 +35,7 @@ describe('BatClass - server and browser tests', () => {
 
 			it('should be able to use Rewire to spy on the private qux function', () => {
 				const bat = new BatClass();
-				const origQux = BatClassRewireAPI.__get__('qux');
+				const origQux = BatClassRewireAPI.__GetDependency__('qux');
 				BatClassRewireAPI.__Rewire__('qux', (word) => {
 					return `overridden ${origQux(word)}`;
 				});
@@ -56,8 +56,8 @@ describe('BatClass - server and browser tests', () => {
 						this.desc = 'simple';
 					}
 				});
-//				const bat = new BatClass();
-				// expect(bat.myBaz.desc).to.eql('simple');
+				const bat = new BatClass();
+				expect(bat.myBaz.desc).to.eql('simple');
 			});
 		});
 	});
