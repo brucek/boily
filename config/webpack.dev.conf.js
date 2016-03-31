@@ -26,8 +26,8 @@ module.exports = {
 					plugins: [
 						'transform-object-rest-spread',
 						'transform-flow-strip-types',
-						'syntax-flow',
-						'babel-plugin-rewire']
+						'syntax-flow'
+          ]
 				}
 			},
 			// This allows the test setup scripts to load `package.json`
